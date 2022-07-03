@@ -1,0 +1,17 @@
+        <!-- Listado de Productos -->
+       
+           <h2 class="mui--text-center">Cantidad de productos en el listado:<%= cantidad %></h2>
+
+          
+           <%- include('./partials/tabla'); %>
+            
+          
+            <% if (produHay) { %>
+                <!-- <h3 class="mui--text-center">Cantidad de producto en el listado:<%= cantidad %></h3>   -->
+             <% } else { %>
+                 <h3 class="mui--text-center" style="background-color:rgb(230, 138, 138)"> Disculpe, no hay productos</h3>
+            <% } %>
+           
+          
+        
+         

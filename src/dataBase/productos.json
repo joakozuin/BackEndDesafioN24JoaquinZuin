@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "fecha": "20/10/2022",
+    "nombre": "Escuadra",
+    "descripcion": "Artículo de libreria",
+    "codigo": 1000,
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-128.png",
+    "precio": 20000,
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "fecha": "20/10/2022",
+    "nombre": "Lapiz",
+    "descripcion": "Artículo de libreria",
+    "codigo": 1001,
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-128.png",
+    "precio": 20,
+    "stock": 10
+  },
+  {
+    "id": 3,
+    "fecha": "20/10/2022",
+    "nombre": "Calculadora",
+    "descripcion": "Artículo de libreria",
+    "codigo": 1002,
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-128.png",
+    "precio": 200,
+    "stock": 10
+  },
+  {
+    "fecha": "28/5/2022 17:19:27",
+    "nombre": "Escuadra 90 grados",
+    "descripcion": "Artículo de libreria",
+    "codigo": 1000,
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-128.png",
+    "precio": 20000,
+    "stock": 21,
+    "id": "5"
+  },
+  {
+    "fecha": "28/5/2022 17:18:7",
+    "nombre": "Escuadra 180 grados",
+    "descripcion": "Artículo de libreria",
+    "codigo": 1000,
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-128.png",
+    "precio": 20000,
+    "stock": 15,
+    "id": 6
+  },
+  {
+    "fecha": "29/5/2022 14:9:55",
+    "nombre": "Escuadra 45 grados",
+    "descripcion": "Articulo de dibujo",
+    "codigo": 1021,
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-128.png",
+    "precio": 34,
+    "stock": 12,
+    "id": 7
+  },
+  {
+    "fecha": "29/5/2022 17:40:11",
+    "nombre": "Lapiz 2h",
+    "descripcion": "Articulo libreria",
+    "codigo": 1051,
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-128.png",
+    "precio": 12,
+    "stock": 4,
+    "id": 8
+  },
+  {
+    "fecha": "29/5/2022 17:45:47",
+    "nombre": "Lapiz HB",
+    "descripcion": "Articulo libreria",
+    "codigo": 1020,
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-128.png",
+    "precio": 12,
+    "stock": 12,
+    "id": 9
+  }
+]

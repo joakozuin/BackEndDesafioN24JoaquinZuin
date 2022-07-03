@@ -1,0 +1,70 @@
+[
+  {
+    "fecha": "28/5/2022 20:30:11",
+    "productos": [
+      {
+        "id": 1,
+        "fecha": "20/10/2022",
+        "nombre": "Escuadra",
+        "descripcion": "Artículo de libreria",
+        "codigo": 1000,
+        "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-128.png",
+        "precio": 20000,
+        "stock": 10
+      },
+      {
+        "id": 3,
+        "fecha": "20/10/2022",
+        "nombre": "Calculadora",
+        "descripcion": "Artículo de libreria",
+        "codigo": 1002,
+        "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-128.png",
+        "precio": 200,
+        "stock": 10
+      },
+      {
+        "id": 2,
+        "fecha": "20/10/2022",
+        "nombre": "Lapiz",
+        "descripcion": "Artículo de libreria",
+        "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-128.png",
+        "precio": 20,
+        "stock": 10
+      }
+    ],
+    "id": 1
+  },
+  {
+    "fecha": "28/5/2022 20:30:14",
+    "productos": [
+      {
+        "id": 3,
+        "fecha": "20/10/2022",
+        "nombre": "Calculadora",
+        "descripcion": "Artículo de libreria",
+        "codigo": 1002,
+        "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-128.png",
+        "precio": 200,
+        "stock": 10
+      }
+    ],
+    "id": 2
+  },
+  {
+    "fecha": "28/5/2022 21:16:8",
+    "productos": [
+      {
+        "id": 1,
+        "fecha": "20/10/2022",
+        "nombre": "Escuadra",
+        "descripcion": "Artículo de libreria",
+        "codigo": 1000,
+        "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-128.png",
+        "precio": 20000,
+        "stock": 10
+      },
+      null
+    ],
+    "id": 6
+  }
+]

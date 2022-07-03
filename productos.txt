@@ -1,0 +1,45 @@
+
+   {
+    "fecha": "20/10/2022",
+    "nombre": "Escuadra",
+    "descripcion": "Artículo de libreria",
+    "codigo": 1000,
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-128.png",
+    "precio": 20000,
+    "stock": 10
+  },
+  {
+    "fecha": "20/10/2022",
+    "nombre": "Lapiz",
+    "descripcion": "Artículo de libreria",
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-128.png",
+    "precio": 20,
+    "stock": 10
+  },
+  {
+    "fecha": "20/10/2022",
+    "nombre": "Calculadora",
+    "descripcion": "Artículo de libreria",
+    "codigo": 1002,
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-128.png",
+    "precio": 200,
+    "stock": 10
+  },
+  {
+    "fecha": "28/5/2022 17:19:27",
+    "nombre": "Escuadra 90 grados",
+    "descripcion": "Artículo de libreria",
+    "codigo": 1000,
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-128.png",
+    "precio": 20000,
+    "stock": 21,
+  },
+  {
+    "fecha": "28/5/2022 17:18:7",
+    "nombre": "Escuadra 180 grados",
+    "descripcion": "Artículo de libreria",
+    "codigo": 1000,
+    "urlFoto": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-128.png",
+    "precio": 20000,
+    "stock": 15,
+  }

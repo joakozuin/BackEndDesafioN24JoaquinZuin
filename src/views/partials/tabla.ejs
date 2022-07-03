@@ -1,0 +1,21 @@
+    <table class="mui-table mui-table--bordered mui-striped" style="background-color: rgb(206, 203, 203);">
+      <thead>
+        <tr>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th class="mui--text-center">Imagen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% if (produHay) { %>
+        <% produ.forEach(function(pro){ %>
+          <tr>
+          <td><%= pro.titulo %> </td>
+          <td><%= pro.precio %> </td>
+          <td class="mui--text-center"><img src=<%= pro.thumbnail %> width=30 height=30 alt="coder"> </td>
+         </tr>
+         <% }); %>
+         <% } %>
+  
+      </tbody>
+    </table> 
