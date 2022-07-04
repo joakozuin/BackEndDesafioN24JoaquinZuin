@@ -50,11 +50,43 @@ const socket=io()
 }) */
 
 
+//Cargar Usuario Logeado
+//
+cargarUsuario=()=>{
+
+  console.log("Recibiendo Usuario Logeado del servidor");
+  // Petición HTTP Renderiza el usuario Logeado
+   fetch("http://localhost:8080/api/login")
+    .then((response) => response.text())
+    .then(data=>{
+          const nombreUs=JSON.parse(data)
+          console.log(nombreUs.Nombre)
+  
+          nombreUsuario = {
+            titulo: "Renderizado Usuario Usando Motor Handlebars",
+            usuario:nombreUs.Nombre
+            };
+  
+            console.log(nombreUsuario)
+  
+           let template = document.getElementById("handlebUsuarioLogeado").innerHTML;
+             let compile = Handlebars.compile(template);
+  
+             let compiledHTML = compile(nombreUsuario);
+  
+             document.getElementById('rendUsuarioLogeado').innerHTML=compiledHTML
+
+             cargarProd()
+             
+          })  
+
+}
+
+
 //Pedir los nuevos productos
 //
-recargarPag=()=>{
-  console.log("Cliente recibiendo Producto del servidor");
-
+cargarProd=()=>{
+  
   /* productos.map(producto=>{
 
       console.log(producto.titulo);
@@ -62,8 +94,8 @@ recargarPag=()=>{
 
     })  */
 
+  console.log("Cliente recibiendo Producto del servidor");
   // Petición HTTP Renderiza lado Servidor
-
    fetch("http://localhost:8080/api/productos")
       .then((response) => response.text())
        .then(data=>{
@@ -114,84 +146,12 @@ recargarPag=()=>{
 
                    })  
 
-    
+
 }
 
-recargarPag()
 
+cargarUsuario()
 
-
-const botonEnvProd=document.querySelector("#enviarProd")
-const botonDeslogear=document.querySelector("#desLogearse")
-
-
-//Enviar Producto  del lado del cliente
-//
- botonEnvProd.addEventListener("click", (e) => {
-  e.preventDefault()
-
-  console.log('Apretando el Boton enviar producto')
-
-  const inputNombre = document.querySelector("#nombre").value;
-  const inputDescripcion = document.querySelector("#descripcion").value;
-  const inputCodigo = document.querySelector("#codigo").value;
-  const inputurlFoto = document.querySelector("#urlFoto").value;
-  const inputPrecio = document.querySelector("#precio").value;
-  const inputStock = document.querySelector("#stock").value;
-
-  const producto = {
-    nombre: inputNombre,
-    descripcion: inputDescripcion,
-    codigo: Number(inputCodigo),
-    urlFoto:inputurlFoto,
-    precio:Number(inputPrecio),
-    stock:Number(inputStock) 
-  };
-
-  console.log('Cliente enviando Producto')
-  console.log(producto)
-
-                      //socket.emit("nuevoProducto", producto);
-
-  //Petición Post HTTP envia producto a la ruta
-  //en formato JSON
-
-   fetch("http://localhost:8080/api/productos/", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(producto),
-  })
-    .then((respuesta) =>{
-          console.log("Todo bien:", respuesta);
-          return respuesta.json()
-    } )
-    .then((data) => {
-      console.log("Todo bien:", data.mensaje);
-
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-    });
-
-});  
- 
-
-//Deslogea al usuario
-//
-botonDeslogear.addEventListener("click", (e) => {
- 
-  e.preventDefault()
-
-  console.log('Apretando el Boton deslogear')
-
- //cargar una pagina HTML
- //
-    location.assign("http://localhost:8080/logout.html");
-
-
-})
 
 
 socket.on('producto',(productos)=>{

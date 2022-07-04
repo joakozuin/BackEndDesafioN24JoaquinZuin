@@ -19,15 +19,22 @@
       <div class="mui-divider"></div>
   
      
-    <script type="text/x-handlebars-template" id="handlebTablaProductos"><!--Row Formulario Listado -->
+    
       
       <!--  -->
       <div class="mui-row" style="margin-top:10px;background-color: rgb(241, 238, 238)">
 
+        <!--Usuario Logeado  -->
+         <script type="text/x-handlebars-template" id="handlebUsuarioLogeado">
+
           <div class="mui-col-md-10 mui--text-center " style="background-color: rgb(208, 222, 235)">
-           <h2>Hola Bienvenido:Joaquin</h2>
+           <h2>Hola Bienvenido: {{usuario}} </h2>
           </div>
 
+         </script>
+
+         <div id="rendUsuarioLogeado"></div>
+        <!--Usuario Logeado  -->
           
           <div class="mui-col-md-2 mui--text-center "  style="background-color: rgb(241, 238, 238);margin-top:10px">
             
@@ -72,12 +79,16 @@
 
          <!-- Formulario -->
 
+         
+
          <div class="mui-col-md-8"  style="background-color:rgb(246, 235, 235)" >
            <!-- <div class="mui--text-center">
                 <button id="cargarTabla" class=" mui-btn mui-btn--raised mui-btn--primary"> Cargar Tabla</button>
                </div> -->
-    
-           <!-- Listado de Productos Armado plantilla Handlebars-->
+
+           <script type="text/x-handlebars-template" id="handlebTablaProductos"><!--Row Formulario Listado -->
+          
+            <!-- Listado de Productos Armado plantilla Handlebars-->
 
             <h2 class="mui--text-center">Cantidad de producto en el listado:{{prod.length}}</h2>
              <table class="mui-table mui-table--bordered mui-striped">
@@ -135,19 +146,23 @@
                <h3 class="mui--text-center" style="background-color:rgb(230, 138, 138)"> Disculpe, no hay productos</h3>
              {{/if}}
 
-            <!-- Listado de Productos Armado plantilla Handlebars-->
+             <!-- Listado de Productos Armado plantilla Handlebars-->
+
+            </script><!--Row Formulario Listado -->
+
+              <!--Renderizado Plantilla Handlebars Productos-->
    
+              <div id="rendProd"></div>
+        
+              <!--Renderizado Plantilla Handlebars Productos-->
+
           </div>
       
-       </div>
+      </div>
 
-    </script><!--Row Formulario Listado -->
+    
 
-          <!--Renderizado Plantilla Handlebars Productos-->
-   
-            <div id="rendProd"></div>
-        
-          <!--Renderizado Plantilla Handlebars Productos-->
+  
 
 
      <!--  <div class="mui-col-md-2"></div> -->
@@ -206,8 +221,10 @@
     <script src="./socket.io/socket.io.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="./js/inicio.js"></script> -->
-    <script src="./js/productos.js"></script>
-  
+    
+    <script src="./js/productos00.js"></script>
+
+    <script src="./js/productos01.js"></script>
+
   </body>
 </html>
