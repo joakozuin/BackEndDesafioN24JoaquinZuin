@@ -71,51 +71,6 @@ import {funcUtil} from '../util/util.js'
 
     },
   
-    //Envia todos los productos
-    //
-    getProductos: async (req, res, next) => {
-      try {
-        let productos = await api.findAll();
-  
-        res.json({
-          mensage: "Lista de Productos de la BD",
-          productos,
-          usuario: acceso,
-        });
-      } catch (error) {
-        const error1 = new Error(
-          `(getAll)-No se encuentran los productos error: ${error}`
-        );
-        error.httpStatusCode = 400;
-  
-        return next(error1);
-      }
-    },
-  
-    //Envia un producto por id
-    //
-    getProducto: async (req, res, next) => {
-      try {
-        const { id } = req.params;
-  
-        let prod = await api.findById(id);
-  
-        res.json({
-          mensage: `Producto con id:${id}`,
-          producto: prod,
-          usuario: acceso
-        });
-      } catch (error) {
-        const error1 = new Error(
-          `(getId)-No se encuentra el producto error: ${error}`
-        );
-        error.httpStatusCode = 400;
-  
-        return next(error1);
-      }
-    },
-
-    
     //Controla el administardor con una variable de
     //entorno, middleware nivel de aplicación 
     admin:(reg,res,next)=>{

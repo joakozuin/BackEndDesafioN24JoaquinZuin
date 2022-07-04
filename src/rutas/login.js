@@ -8,9 +8,6 @@ const {
       postLogin,
       getLogin,
       getLogout,
-      getProductos,
-      getProducto,
-      admin,
    
     } =funcLogin
 
@@ -25,15 +22,11 @@ const {
             
 }; */
 
-
 router.post('/',                       postLogin)
 
 router.get('/',                         getLogin)
 
 router.get('/logout',                 getLogout)
-
-router.get('/productos',              getProductos)
-router.get('/producto/:id',  admin,   getProducto)
 
 
 export default router

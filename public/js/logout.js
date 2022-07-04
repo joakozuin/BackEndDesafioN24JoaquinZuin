@@ -5,7 +5,7 @@ cargarLogout=()=>{
   console.log("Cargando Despedida....")
 
   // Petición HTTP Renderiza el usuario Logeado
-  fetch("http://localhost:8080/api/login")
+  fetch("http://localhost:8080/api/login/logout")
   .then((response) => response.text())
   .then(data=>{
         const nombreUs=JSON.parse(data)
